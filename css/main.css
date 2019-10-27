@@ -1,41 +1,76 @@
 body{
-	background-color: darkblue;
+	background-color: #036db6;
 }
 
 html,body { height: 100%;}
 
-.centrado{
-	margin: 0 30%;
+/*Cabecera del documento principal*/
+header{
+	text-align: center;
 }
 
-#logo{
-	width:40%;
+.logo-centrado{
+	width: auto;
+	max-width: 25%;
+
 }
 
+
+/*Menu principal*/
 .menu{
+	text-align: left;
+
 	border: solid black;
 	border-radius: 10px;
+	border-width: 1px;
+
 	display: flex;
 	flex-direction: column;
-	background-color: silver;
-	width:80%;
-	height:50%;
-	margin: 3% 10%;
+
+	background-color: #f5f3f3;
+	
+	margin-left: 20%;
+	margin-right: 20%;
+
 }
 
-a{
-	text-decoration: none;
-	color: inherit;
+.menu *{
+    text-align: center;
 }
 
-.menu a{
-	font-size: 3vh;
-	text-align: center;
-	margin: auto;
-	border: solid red;
-	width:30%;
-	height:30%;
-	border-radius: 10px;
-	padding: 5% 4px 4px 4px;
-	background-color: white;
+fieldset *{
+    font-size: 200%;
+	font-family: Verdana;
+}
+
+#QR{
+    width: 50%;
+    height: 50%;
+}
+
+.liga{
+	font-size: 200%;
+	font-style: bold;
+	font-family: Verdana;
+
+
+	border: solid black;
+	border-width: 1px;
+
+	background-color: #036db6;
+	color: white;
+
+	float: center;
+
+	padding: 2% 2% 2% 2%;
+	margin: 2% 2% 2% 2%;
+
+	border: 2px solid;
+  	line-height: 1;
+}
+
+.liga:hover, .liga:focus{
+	background-color: #258cd4;
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  	transform: translateY(-0.25em);	
 }

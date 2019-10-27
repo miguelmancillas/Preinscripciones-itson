@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!--
+
+	itson.html
+
+	Inscripción a eventos ITSON.
+
+-->
+
+<html>
+	<head>
+		<title>Preinscripcion - ITSON</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+	<body>
+
+		<header>
+			<a href="index.html"><img class="logo-centrado" src="img/ITSON_negativo.png"/></a>
+		</header>
+        <div class="menu">
+			<form action="terminado.html" method="post" name="cuestionario">
+                <fieldset>
+                    <legend>Favor de llenar el formulario:</legend>
+                    <label for="id">ID:</label>
+                    <input type="text" required name="id" id="id">
+                    <br/><br/>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" required name="nombre" id="nombre">
+                    <br/><br/>
+                    <label for="carrera">Carrera:</label>
+                    <select required name="carrera" id="carrera">
+                        <option>ISW</option>
+                        <option>IMT</option>
+                        <option>IES</option>
+                    </select>
+                    <br/><br/>
+                    <input required type=radio name="genero" value=masculino>
+                    <label for="masculino">Masculino</label>
+                    <input required type=radio name="genero" value=femenino>
+                    <label for="femenino">Femenino</label>
+                    <br/>
+                <br/>
+                </fieldset>
+                <input type=submit>
+            </form>
+        </div>
+
+	</body>
+</html>
